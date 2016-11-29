@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="71819" started-at="2016-11-29T07:08:26Z" finished-at="2016-11-29T07:09:38Z">
+    <groups>
+    </groups>
+    <test name="AXS_NYSE_Company" duration-ms="46112" started-at="2016-11-29T07:08:26Z" finished-at="2016-11-29T07:09:12Z">
+      <class name="pageTests.TestMethod">
+        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@78031613]" name="SearchCompany" duration-ms="15243" started-at="2016-11-29T12:38:57Z" finished-at="2016-11-29T12:39:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AXS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchCompany -->
+        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@78031613]" name="RetrieveCompanyData" duration-ms="187" started-at="2016-11-29T12:39:12Z" finished-at="2016-11-29T12:39:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AXS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RetrieveCompanyData -->
+      </class> <!-- pageTests.TestMethod -->
+    </test> <!-- AXS_NYSE_Company -->
+    <test name="AIG_NYSE_Company" duration-ms="17881" started-at="2016-11-29T07:09:13Z" finished-at="2016-11-29T07:09:30Z">
+      <class name="pageTests.TestMethod">
+        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@6426f7af]" name="SearchCompany" duration-ms="9535" started-at="2016-11-29T12:39:21Z" finished-at="2016-11-29T12:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AIG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchCompany -->
+        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@6426f7af]" name="RetrieveCompanyData" duration-ms="234" started-at="2016-11-29T12:39:30Z" finished-at="2016-11-29T12:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AIG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RetrieveCompanyData -->
+      </class> <!-- pageTests.TestMethod -->
+    </test> <!-- AIG_NYSE_Company -->
+    <test name="CompareEPS_AXS_vs_AIG" duration-ms="7648" started-at="2016-11-29T07:09:30Z" finished-at="2016-11-29T07:09:38Z">
+      <class name="pageTests.TestMethod">
+        <test-method status="PASS" signature="compareEPS(java.lang.String, java.lang.String)[pri:0, instance:pageTests.TestMethod@13653a8e]" name="compareEPS" duration-ms="4" started-at="2016-11-29T12:39:38Z" finished-at="2016-11-29T12:39:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AXS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AIG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareEPS -->
+      </class> <!-- pageTests.TestMethod -->
+    </test> <!-- CompareEPS_AXS_vs_AIG -->
+  </suite> <!-- Suite -->
+</testng-results>
