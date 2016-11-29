@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browserName" value="Chrome"></parameter>
+
+	<listeners>
+		<listener class-name="testbase.TestBaseClass" />
+	</listeners>
+
+
+	<test name="AXS_NYSE_Company">
+		<parameter name="companyName" value="AXS"></parameter>
+		<classes>
+			<class name="pageTests.TestMethod">
+				<methods>
+					<include name="SearchCompany"></include>
+					<include name="RetrieveCompanyData"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="AIG_NYSE_Company">
+		<parameter name="companyName" value="AIG"></parameter>
+		<classes>
+			<class name="pageTests.TestMethod">
+				<methods>
+					<include name="SearchCompany"></include>
+					<include name="RetrieveCompanyData"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="CompareEPS_AXS_vs_AIG">
+		<parameter name="firstCompareCMP" value="AXS"></parameter>
+		<parameter name="secondCompareCMP" value="AIG"></parameter>
+		<classes>
+			<class name="pageTests.TestMethod">
+				<methods>
+					<include name="compareEPS"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
