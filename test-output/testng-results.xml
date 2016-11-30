@@ -1,81 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="71819" started-at="2016-11-29T07:08:26Z" finished-at="2016-11-29T07:09:38Z">
+  <suite name="Default suite" duration-ms="69" started-at="2016-11-30T10:20:23Z" finished-at="2016-11-30T10:20:23Z">
     <groups>
     </groups>
-    <test name="AXS_NYSE_Company" duration-ms="46112" started-at="2016-11-29T07:08:26Z" finished-at="2016-11-29T07:09:12Z">
+    <test name="Default test" duration-ms="69" started-at="2016-11-30T10:20:23Z" finished-at="2016-11-30T10:20:23Z">
       <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@78031613]" name="SearchCompany" duration-ms="15243" started-at="2016-11-29T12:38:57Z" finished-at="2016-11-29T12:39:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AXS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchCompany -->
-        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@78031613]" name="RetrieveCompanyData" duration-ms="187" started-at="2016-11-29T12:39:12Z" finished-at="2016-11-29T12:39:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AXS]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@59d02cf0]" name="RetrieveCompanyData" duration-ms="0" started-at="2016-11-30T15:50:23Z" finished-at="2016-11-30T15:50:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'companyName' is required by @Test on method RetrieveCompanyData but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'companyName' is required by @Test on method RetrieveCompanyData but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RetrieveCompanyData -->
-      </class> <!-- pageTests.TestMethod -->
-    </test> <!-- AXS_NYSE_Company -->
-    <test name="AIG_NYSE_Company" duration-ms="17881" started-at="2016-11-29T07:09:13Z" finished-at="2016-11-29T07:09:30Z">
-      <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@6426f7af]" name="SearchCompany" duration-ms="9535" started-at="2016-11-29T12:39:21Z" finished-at="2016-11-29T12:39:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AIG]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@59d02cf0]" name="SearchCompany" duration-ms="0" started-at="2016-11-30T15:50:23Z" finished-at="2016-11-30T15:50:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'companyName' is required by @Test on method SearchCompany but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'companyName' is required by @Test on method SearchCompany but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchCompany -->
-        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@6426f7af]" name="RetrieveCompanyData" duration-ms="234" started-at="2016-11-29T12:39:30Z" finished-at="2016-11-29T12:39:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AIG]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RetrieveCompanyData -->
-      </class> <!-- pageTests.TestMethod -->
-    </test> <!-- AIG_NYSE_Company -->
-    <test name="CompareEPS_AXS_vs_AIG" duration-ms="7648" started-at="2016-11-29T07:09:30Z" finished-at="2016-11-29T07:09:38Z">
-      <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="compareEPS(java.lang.String, java.lang.String)[pri:0, instance:pageTests.TestMethod@13653a8e]" name="compareEPS" duration-ms="4" started-at="2016-11-29T12:39:38Z" finished-at="2016-11-29T12:39:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AXS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[AIG]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="compareEPS(java.lang.String, java.lang.String)[pri:0, instance:pageTests.TestMethod@59d02cf0]" name="compareEPS" duration-ms="0" started-at="2016-11-30T15:50:23Z" finished-at="2016-11-30T15:50:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstCompareCMP' is required by @Test on method compareEPS but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstCompareCMP' is required by @Test on method compareEPS but has not been marked @Optional or defined
+in C:\Users\rajiv.sharma\AppData\Local\Temp\testng-eclipse--408598290\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareEPS -->
       </class> <!-- pageTests.TestMethod -->
-    </test> <!-- CompareEPS_AXS_vs_AIG -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
