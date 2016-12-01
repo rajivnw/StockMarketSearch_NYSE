@@ -5,7 +5,7 @@
 	<listeners>
 		<listener class-name="testbase.TestBaseClass" />
 	</listeners>
-	<parameter name="browserName" value="Firefox"></parameter>
+	<parameter name="browserName" value="Chrome"></parameter>
 	
 
 	<test name="AXS_NYSE_Company">
