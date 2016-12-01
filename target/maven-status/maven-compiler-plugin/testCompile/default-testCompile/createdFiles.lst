@@ -1,0 +1,4 @@
+pageTests\TestMethod.class
+pageObjs\RetrieveTestData.class
+pageObjs\SearchCompany.class
+pageTests\ComparePrices_test.class
