@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="153560" started-at="2016-12-01T04:48:13Z" finished-at="2016-12-01T04:50:47Z">
+  <suite name="Suite" duration-ms="88156" started-at="2016-12-01T07:04:06Z" finished-at="2016-12-01T07:05:35Z">
     <groups>
     </groups>
-    <test name="AXS_NYSE_Company" duration-ms="44812" started-at="2016-12-01T04:48:13Z" finished-at="2016-12-01T04:48:58Z">
+    <test name="AXS_NYSE_Company" duration-ms="59893" started-at="2016-12-01T07:04:06Z" finished-at="2016-12-01T07:05:06Z">
       <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@627a73aa]" name="SearchCompany" duration-ms="14403" started-at="2016-12-01T10:18:43Z" finished-at="2016-12-01T10:18:57Z">
+        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@3fead226]" name="SearchCompany" duration-ms="20799" started-at="2016-12-01T12:34:45Z" finished-at="2016-12-01T12:35:06Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchCompany -->
-        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@627a73aa]" name="RetrieveCompanyData" duration-ms="367" started-at="2016-12-01T10:18:57Z" finished-at="2016-12-01T10:18:58Z">
+        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@3fead226]" name="RetrieveCompanyData" duration-ms="226" started-at="2016-12-01T12:35:06Z" finished-at="2016-12-01T12:35:06Z">
           <params>
             <param index="0">
               <value>
@@ -31,9 +31,9 @@
         </test-method> <!-- RetrieveCompanyData -->
       </class> <!-- pageTests.TestMethod -->
     </test> <!-- AXS_NYSE_Company -->
-    <test name="AIG_NYSE_Company" duration-ms="41015" started-at="2016-12-01T04:48:58Z" finished-at="2016-12-01T04:49:39Z">
+    <test name="AIG_NYSE_Company" duration-ms="20710" started-at="2016-12-01T07:05:06Z" finished-at="2016-12-01T07:05:27Z">
       <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@65a6bc76]" name="SearchCompany" duration-ms="29647" started-at="2016-12-01T10:19:09Z" finished-at="2016-12-01T10:19:39Z">
+        <test-method status="PASS" signature="SearchCompany(java.lang.String)[pri:0, instance:pageTests.TestMethod@59ae5a16]" name="SearchCompany" duration-ms="13635" started-at="2016-12-01T12:35:13Z" finished-at="2016-12-01T12:35:27Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchCompany -->
-        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@65a6bc76]" name="RetrieveCompanyData" duration-ms="195" started-at="2016-12-01T10:19:39Z" finished-at="2016-12-01T10:19:39Z">
+        <test-method status="PASS" signature="RetrieveCompanyData(java.lang.String)[pri:0, instance:pageTests.TestMethod@59ae5a16]" name="RetrieveCompanyData" duration-ms="344" started-at="2016-12-01T12:35:27Z" finished-at="2016-12-01T12:35:27Z">
           <params>
             <param index="0">
               <value>
@@ -57,9 +57,9 @@
         </test-method> <!-- RetrieveCompanyData -->
       </class> <!-- pageTests.TestMethod -->
     </test> <!-- AIG_NYSE_Company -->
-    <test name="CompareEPS_AXS_vs_AIG" duration-ms="67261" started-at="2016-12-01T04:49:39Z" finished-at="2016-12-01T04:50:47Z">
+    <test name="CompareEPS_AXS_vs_AIG" duration-ms="7519" started-at="2016-12-01T07:05:27Z" finished-at="2016-12-01T07:05:35Z">
       <class name="pageTests.TestMethod">
-        <test-method status="PASS" signature="compareEPS(java.lang.String, java.lang.String)[pri:0, instance:pageTests.TestMethod@4fc5a2f9]" name="compareEPS" duration-ms="1" started-at="2016-12-01T10:20:47Z" finished-at="2016-12-01T10:20:47Z">
+        <test-method status="PASS" signature="compareEPS(java.lang.String, java.lang.String)[pri:0, instance:pageTests.TestMethod@21140e5a]" name="compareEPS" duration-ms="1" started-at="2016-12-01T12:35:35Z" finished-at="2016-12-01T12:35:35Z">
           <params>
             <param index="0">
               <value>
