@@ -19,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -69,8 +70,7 @@ public class TestBaseClass implements ITestListener {
 
 		capabilities.setCapability("deviceName", deviceName);
 		capabilities.setCapability("automationName", automationName);
-		PerfectoLabUtils.setExecutionIdCapability(capabilities, host);
-		AndroidDriver driver = new AndroidDriver(
+		RemoteWebDriver driver = new RemoteWebDriver(
 				new URL("https://" + host + "/nexperience/perfectomobile/wd/hub"),
 				capabilities);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
