@@ -4,17 +4,21 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Enumeration;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -38,10 +42,39 @@ public class TestBaseClass implements ITestListener {
 		System.out.println(driverCap);
 
 		if (driver == null) {
-			setDriver(context.getCurrentXmlTest().getParameter("browserName"));
+			try {
+				setCap();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		driver.manage().deleteAllCookies();
 		this.openWebsite();
+	}
+
+	public void setCap() throws IOException {
+
+		String user = getKey("user");
+		String password = getKey("password");
+		String host = getKey("host");
+		String browserName = getKey("mobileOS");
+		String deviceName = getKey("deviceName");
+		String automationName = getKey("Appium");
+
+		DesiredCapabilities capabilities =
+				new DesiredCapabilities(browserName, "", Platform.ANY);
+		capabilities.setCapability("user", user);
+		capabilities.setCapability("password", password);
+
+		capabilities.setCapability("deviceName", deviceName);
+		capabilities.setCapability("automationName", automationName);
+		PerfectoLabUtils.setExecutionIdCapability(capabilities, host);
+		AndroidDriver driver = new AndroidDriver(
+				new URL("https://" + host + "/nexperience/perfectomobile/wd/hub"),
+				capabilities);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
 	}
 
 	public static WebDriver getDriver() {
